@@ -1,0 +1,1281 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        *:focus {
+            outline: none;
+        }
+        
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            color: #565658;
+            font-family: 'Poppins', sans-serif;
+            padding: 60px 40px;
+            background-color: #F3F3FD;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #707070;
+            font-size: 16px;
+        }
+        
+        ul,
+        li {
+            list-style-type: none;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .page_wrap {
+            width: 100%;
+            overflow-x: hidden !important;
+        }
+        /* ===========Side-bar-css-Start============== */
+        
+        .sidebar-nav {
+            width: 300px;
+            padding: 10px;
+            background-color: #323484;
+            position: absolute;
+            border-radius: 20px;
+            box-shadow: -20px 0px 50px rgba(50, 52, 132, 0.3), 20px 30px 50px rgba(50, 52, 132, 0.3);
+            height: 3480px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+        
+        .profile .avtar {
+            padding-top: 10px;
+        }
+        
+        .profile .name-pos {
+            margin: 0 40px 0 20px;
+        }
+        
+        .profile .name-pos h3 {
+            color: #D7DAFF;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .profile .name-pos a {
+            color: #97CEA8;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 15px;
+        }
+        
+        .profile .drp-icon span {
+            display: inline-block;
+            background-color: #9496FF;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .side-nav {
+            padding: 0 15px;
+        }
+        
+        .side-nav ul li {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px 10px;
+            width: 100%;
+            transition: .4s;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .side-nav ul li::before {
+            content: "";
+            position: absolute;
+            left: -27px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 42px;
+            background-color: #F9D366;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            opacity: 0;
+            transition: .4s;
+        }
+        
+        .side-nav ul li .drp-btn {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+        
+        .side-nav ul li:hover::before {
+            opacity: 1;
+            left: -25px;
+        }
+        
+        .side-nav ul li a {
+            color: #CDCDF9;
+        }
+        
+        .side-nav ul li:hover a {
+            color: #fff;
+        }
+        
+        .side-nav ul li:hover span {
+            color: #fff;
+        }
+        
+        .side-nav ul li span {
+            margin-right: 20px;
+            color: #CDCDF9;
+        }
+        
+        .side-gift {
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding-top: 25px;
+            position: relative;
+            height: 260px;
+            margin-top: 100px;
+        }
+        
+        .side-gift img {
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .side-gift .img-text {
+            margin-bottom: 10px;
+        }
+        
+        .side-gift .img-text h2 {
+            color: #fff;
+            font-size: 24px;
+        }
+        
+        .side-gift .img-text h2 span {
+            font-weight: normal;
+        }
+        /* ================header-css-Start================= */
+        
+        header {
+            margin-top: 15px;
+            margin-left: 325px;
+            padding: 15px 30px;
+            box-shadow: 0 0 8px #ccc;
+            background-color: #323484;
+            border-radius: 20px;
+            min-height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .head-inner {
+            color: #fff;
+        }
+        
+        .head-inner h1,
+        .head-inner h5 {
+            font-weight: normal;
+        }
+        
+        .head-inner h1 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            letter-spacing: 0.06em;
+            font-style: normal;
+        }
+        
+        .head-inner h5 {
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'Philosopher', sans-serif;
+            font-weight: normal;
+        }
+        
+        .toggle_bar span {
+            font-size: 30px;
+            color: #fff;
+            display: none;
+        }
+        /* ===========Main_contant-css-Start================== */
+        
+        .main_contant {
+            margin: 25px;
+            margin-left: 325px;
+            padding: 15px;
+            margin-right: 0;
+        }
+        
+        .main_contant .top_memes_part {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .main_contant .left_part {
+            width: 65%;
+        }
+        
+        .main_contant .right_part {
+            width: 35%;
+        }
+        
+        .main_contant .left_part .meme_card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .main_contant .left_part .meme_card .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px 10px;
+            text-align: center;
+            box-shadow: 0px 10px 40px 0px #48484833;
+            position: relative;
+        }
+        
+        .main_contant .left_part .meme_card .card h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 15px;
+            line-height: 24px;
+            letter-spacing: 0.06em;
+        }
+        
+        .main_contant .left_part .meme_card .card::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 8px);
+            height: calc(100% - 8px);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 4px solid transparent;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            border-radius: 20px;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(1)::before {
+            background: linear-gradient(90deg, #BFD3FF, #E0EAFF) border-box;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(2)::before {
+            background: linear-gradient(90deg, #FEF4C3, #FFF8D5) border-box;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(3)::before {
+            background: linear-gradient(90deg, #ECDBFF, #EEDEFF) border-box;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(1) h3 {
+            color: #85ABFF;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(2) h3 {
+            color: #F9D366;
+        }
+        
+        .main_contant .left_part .meme_card .card:nth-child(3) h3 {
+            color: #B993E5;
+        }
+        /* -------Chart-Css-Start---------------- */
+        
+        .count_chart {
+            margin-top: 40px;
+            background: #D8E4FF;
+            border: 2px solid #D8E4FF;
+            border-radius: 20px;
+            padding: 20px 10px 25px 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        
+        .count_chart .chart {
+            width: 499px;
+            height: 438px;
+            position: relative;
+            background: #FDFFFF;
+            box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.17);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 40px;
+            margin-right: 10px;
+        }
+        
+        .count_chart .chart img {
+            max-width: 100%;
+        }
+        
+        .count_chart .chart h2 {
+            position: absolute;
+            z-index: 1;
+            top: 30px;
+            left: 20px;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+            font-weight: bold;
+            line-height: 30px;
+            font-style: normal;
+            color: #282CD5;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        
+        .count_chart .chart_filter ul li a {
+            padding: 5px;
+            width: 80px;
+            height: 25px;
+            background: #eeeded;
+            box-shadow: 0px 8px 20px rgba(188, 209, 255, 0.6);
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 20px;
+            transition: .2s;
+            color: #ABA9A9;
+        }
+        
+        .count_chart .chart_filter ul li a:hover,
+        .count_chart .chart_filter ul li a.active {
+            background-color: #fff;
+            color: #323484;
+        }
+        /* ---------Right_part_start----------- */
+        
+        .main_contant .right_part {
+            margin-left: 40px;
+            margin-top: -40px;
+        }
+        
+        .right_part .create_new {
+            width: 260px;
+            background: linear-gradient(180deg, #FFCB9D 0%, #FFEE9D 100%);
+            padding: 20px 25px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+            border-radius: 0px 0px 40px 40px;
+        }
+        
+        .right_part .create_new h5 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0.06em;
+        }
+        
+        .right_part .right_card {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .right_part .right_card .card a {
+            background: #FFFFFF;
+            box-shadow: 0px 17px 20px rgba(249, 211, 102, 0.4);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 5px;
+            height: 70px;
+            transition: .4s;
+        }
+        
+        .right_part .right_card .card a:hover {
+            box-shadow: 0 0 8px #fff;
+        }
+        
+        .right_part .right_card .card span {
+            width: 100px;
+            text-align: center;
+        }
+        
+        .right_part .right_card .card h5 {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 0;
+            color: #565658;
+        }
+        /* ------weekly_creation----------- */
+        
+        .weekly_creation {
+            background: #FFFFFF;
+            border: 1px solid #D8E4FF;
+            box-sizing: border-box;
+            box-shadow: 8px 8px 40px rgba(254, 233, 125, 0.2);
+            border-radius: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            height: 250px;
+        }
+        
+        .weekly_creation .bg_img img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .weekly_creation h3 {
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 30px;
+            letter-spacing: 0.08em;
+        }
+        
+        .weekly_creation .week_card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .weekly_creation .week_card .card {
+            padding: 25px 5px;
+            text-align: center;
+            width: 70px;
+            background: #FFFFFF;
+            box-shadow: 3px 10px 10px rgba(183, 113, 255, 0.25);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        
+        .weekly_creation .week_card .card span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: #323484;
+            margin-bottom: 20px;
+            display: inline-block
+        }
+        
+        .weekly_creation .week_card .card h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #323484;
+        }
+        /* -------------new_arrival--------------- */
+        
+        .new_arrival {
+            margin-top: 40px;
+            width: calc(100% + 20px);
+            position: relative;
+            padding: 20px 30px;
+            height: 400px;
+        }
+        
+        .new_arrival .han_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -10;
+            height: 100%;
+        }
+        
+        .new_arrival .han_bg img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: 90% 50%;
+        }
+        
+        .new_arrival .new_arrival_info .title {
+            margin-bottom: 20px;
+        }
+        
+        .new_arrival .new_arrival_info .title h3 {
+            font-weight: bold;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.08em;
+            color: #282CD5;
+        }
+        
+        .new_arrival_table {
+            display: grid;
+            width: 70%;
+            background: #FDFFFF;
+            box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.17);
+            border-radius: 20px;
+            padding: 5px 15px;
+            height: 290px;
+        }
+        
+        .new_arrival_table table {
+            text-align: center;
+        }
+        
+        .new_arrival_table table thead {
+            line-height: 2;
+        }
+        
+        .new_arrival_table table thead tr td {
+            border-bottom: 1px solid #DFDCDC;
+            color: #000000;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.01em;
+        }
+        
+        .new_arrival_table table tbody tr td {
+            padding: 5px;
+            color: #323484;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+        
+        .new_arrival_table table tr td .item_detail,
+        .new_arrival_table table tr td .date_time {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .new_arrival_table table tr td .item_detail {
+            padding-left: 60px;
+        }
+        
+        .new_arrival_table table tr td .item_detail .new_img,
+        .new_arrival_table table tr td .date_time .date {
+            margin-right: 20px;
+        }
+        
+        .new_arrival_table table tr td .item_detail .item_name h3 {
+            font-size: 16px;
+            color: #323484;
+            font-weight: 600;
+        }
+        
+        .new_arrival_table table tr td .date_time p {
+            font-size: 16px;
+            color: #323484;
+            font-weight: 600;
+        }
+        
+        .pagenation {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 10%;
+            padding-bottom: 15px;
+        }
+        
+        .pagenation ul li {
+            display: flex;
+            align-items: center;
+        }
+        
+        .pagenation ul li a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #000;
+        }
+        
+        .pagenation ul li a.page_number {
+            background: #FEE97D;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* ---------------media_memes----------------- */
+        
+        .media_memes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        
+        .media_memes .latest_media,
+        .media_memes .top_memes {
+            width: 48%;
+            background: #FFFFFF;
+            border-radius: 20px;
+        }
+        
+        .media_memes .comman_media .title,
+        .media_memes .comman_media .title {
+            background: #D8E4FF;
+            border-radius: 20px 20px 0px 0px;
+            padding: 20px 40px;
+            border-bottom: 2px solid #CEC1E8;
+        }
+        
+        .media_memes .comman_media .title h4,
+        .media_memes .comman_media .title h4 {
+            color: #282CD5;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            line-height: 30px;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li {
+            display: flex;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid #CEC1E8;
+            margin: 0 5px;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li:last-child {
+            border: none;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .img {
+            margin: 0 50px;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .number {
+            font-weight: 600;
+            font-size: 16px;
+            color: #323484;
+            letter-spacing: 0.01em;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .info .media_name h4 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #323484;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .info .creat_share {
+            width: 120px;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .info .creat_share ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 15px;
+        }
+        
+        .media_memes .comman_media .comman_media_inner ul .info_li .info .creat_share ul a {
+            color: #323484;
+        }
+        /* ------------tranding_cards---------------- */
+        
+        .tranding_cards {
+            margin-top: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding-bottom: 30px;
+        }
+        
+        .tranding_cards .bg_img {
+            width: 100%;
+        }
+        
+        .tranding_cards .bg_img img {
+            width: 100%;
+        }
+        
+        .tranding_cards .tranding_card_info {
+            display: flex;
+            justify-content: center;
+            margin-top: -133px;
+        }
+        
+        .tranding_cards .tranding_card_info .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 0px;
+            text-align: center;
+            background-color: #9293c5;
+            width: 198px;
+            background: #FFF4DE;
+            box-shadow: 0px 10px 30px rgba(118, 118, 118, 0.18);
+            border-radius: 20px;
+            margin: 20px 17px;
+            height: 250px;
+        }
+        
+        .tranding_cards .tranding_card_info .card:nth-child(2) {
+            background: #EEE5FF;
+        }
+        
+        .tranding_cards .tranding_card_info .card:nth-child(3) {
+            background: #FFE2E6;
+        }
+        
+        .tranding_cards .tranding_card_info .card:nth-child(4) {
+            background: #C9F7F5;
+        }
+        
+        .tranding_cards .tranding_card_info .card .card_icon {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        .tranding_cards .tranding_card_info .card .card_name h3 {
+            color: #323484;
+            font-size: 24px;
+            margin-top: 15px;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+        /* -------------recent_item------------------ */
+        
+        .recent_item {
+            background: #FFFFFF;
+            border: 1px solid #D8D9FE;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .recent_item .title {
+            margin-bottom: 30px;
+        }
+        
+        .recent_item .title h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #323484;
+        }
+        
+        .recent_item .recent_table {
+            display: grid;
+            text-align: center;
+        }
+        
+        .recent_item .recent_table table thead {
+            line-height: 5;
+        }
+        
+        .recent_item .recent_table table thead tr td {
+            border-bottom: 1px solid #CEC1E8;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+        }
+        
+        .recent_item .recent_table table tbody tr td {
+            padding: 10px 0;
+            color: #323484;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .recent_item .recent_table table tbody .media,
+        .recent_item .recent_table table tbody .date_time,
+        .recent_item .recent_table table tbody .action ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .recent_item .recent_table table tbody .media {
+            justify-content: flex-start;
+        }
+        
+        .recent_item .recent_table table tbody .date_time .date {
+            margin-right: 30px;
+        }
+        
+        .recent_item .recent_table table tbody .date_time p,
+        .recent_item .recent_table table tbody .media .name {
+            color: #323484;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .recent_item .recent_table table tbody .media .img {
+            margin-right: 90px;
+            margin-left: 120px;
+        }
+        
+        .recent_item .recent_table table tbody .action ul li a {
+            margin: 0 5px;
+            width: 45px;
+            height: 45px;
+            color: #323484;
+            background-color: #FEF4C3;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .recent_item .recent_table table tbody .action ul li:last-child a {
+            background-color: #FEC3C3;
+        }
+        
+        .recent_item .pagenation {
+            margin-right: 5%;
+            margin-top: 50px;
+        }
+        
+        .recent_item .recent_table table thead tr td:first-child {
+            padding: 0 15px;
+        }
+        /* -------------Media-Query-Start--------------- */
+        
+        @media screen and (max-width:1440px) {
+            .right_part .create_new {
+                width: 100%;
+            }
+            .weekly_creation .week_card .card {
+                width: 30%;
+                margin-top: 40px;
+            }
+        }
+        
+        @media screen and (max-width:1366px) {
+            .new_arrival_table {
+                width: 80%;
+            }
+            .new_arrival_table table tr td .item_detail .item_name h3,
+            .new_arrival_table table tr td .date_time p {
+                font-size: 15px;
+            }
+        }
+        
+        @media screen and (max-width:1300px) {
+            body {
+                padding: 40px 20px;
+            }
+            .main_contant .left_part .meme_card .card {
+                margin-bottom: 20px;
+                width: 30%;
+                height: 100px;
+            }
+            .main_contant .left_part .meme_card .card span img {
+                width: 45px;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li {
+                padding: 20px;
+            }
+            .main_contant .left_part .meme_card .card h3 {
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+        
+        @media screen and (max-width:1200px) {
+            .right_part .create_new {
+                padding: 20px 10px;
+            }
+            .main_contant .right_part {
+                width: 36%;
+                margin-left: 15px;
+            }
+            .main_contant .left_part {
+                width: 64%;
+            }
+            .weekly_creation {
+                padding: 20px 10px;
+            }
+            .weekly_creation .week_card .card {
+                width: 32%;
+                margin-top: 40px;
+            }
+            .weekly_creation .week_card .card span {
+                font-size: 12px;
+            }
+            .new_arrival_table table tr td .date_time p,
+            .new_arrival_table table tr td .item_detail .item_name h3 {
+                font-size: 12px;
+            }
+            .new_arrival_table {
+                width: 90%;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li .img {
+                margin: 0 20px;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li {
+                padding: 15px;
+            }
+            .tranding_cards .tranding_card_info .card .card_name h3 {
+                font-size: 14px;
+            }
+            .recent_item .recent_table table tbody .media .img {
+                margin-right: 30px;
+                margin-left: 45px;
+            }
+            .recent_item .recent_table table tbody .date_time p,
+            .recent_item .recent_table table tbody .media .name {
+                font-size: 16px;
+            }
+            .tranding_cards .tranding_card_info .card {
+                margin: 0 10px;
+            }
+            .tranding_cards .tranding_card_info {
+                margin-top: -85px;
+            }
+        }
+        
+        @media screen and (max-width:992px) {
+            .toggle_bar span {
+                display: block;
+            }
+            .sidebar-nav {
+                left: -350px;
+                height: auto;
+                transition: .4s;
+                z-index: 999999999;
+            }
+            .sidebar-nav.active {
+                left: 20px;
+            }
+            header,
+            .main_contant {
+                margin-left: 0;
+            }
+            .weekly_creation .week_card .card {
+                width: 75px;
+            }
+            .new_arrival_table table tr td .date_time p,
+            .new_arrival_table table tr td .item_detail .item_name h3 {
+                font-size: 16px;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li .img {
+                margin: 0 35px;
+            }
+            .tranding_cards .tranding_card_info .card {
+                margin: 0 10px;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .main_contant .top_memes_part,
+            .media_memes {
+                flex-direction: column;
+            }
+            .main_contant .left_part,
+            .main_contant .right_part,
+            .media_memes .latest_media,
+            .media_memes .top_memes {
+                width: 100%;
+            }
+            .main_contant .left_part {
+                margin-bottom: 40px;
+            }
+            .main_contant .right_part {
+                margin-top: 0;
+                margin-left: 0;
+            }
+            .right_part .create_new {
+                border-radius: 20px;
+                padding: 30px 20px;
+            }
+            .weekly_creation .week_card .card {
+                width: 30%;
+            }
+            .new_arrival_table {
+                margin-left: -10px;
+            }
+            .new_arrival_table,
+            .new_arrival {
+                width: 100%;
+            }
+            .media_memes .latest_media {
+                margin-bottom: 40px;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li {
+                justify-content: space-around;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li {
+                padding: 15px 40px;
+            }
+            .tranding_cards .tranding_card_info {
+                flex-wrap: wrap;
+            }
+            .tranding_cards .tranding_card_info .card {
+                width: 40%;
+                margin-bottom: 15px;
+            }
+            .recent_item .recent_table,
+            .new_arrival_table {
+                overflow-x: scroll;
+            }
+            .recent_item .recent_table table,
+            .new_arrival_table table {
+                width: 650px;
+            }
+            .media_memes .pagenation {
+                margin-top: 20px;
+            }
+            .count_chart {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .count_chart .chart {
+                width: 100%;
+                height: 450px;
+            }
+            .chart_filter ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+            .chart_filter ul li {
+                margin: 0 15px;
+            }
+        }
+        
+        @media screen and (max-width:450px) {
+            body {
+                padding: 15px;
+            }
+            a {
+                font-size: 12px;
+            }
+            .main_contant .left_part .meme_card .card {
+                width: 100%;
+            }
+            .new_arrival {
+                padding: 10px;
+            }
+            .new_arrival_table {
+                margin-left: 0;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li {
+                padding: 10px;
+            }
+            .media_memes .comman_media .comman_media_inner ul .info_li .img {
+                margin: 0 10px;
+            }
+            .tranding_cards .tranding_card_info {
+                margin-top: -50px;
+            }
+            .tranding_cards .tranding_card_info .card {
+                width: 100%;
+            }
+            .sidebar-nav.active {
+                left: 0;
+            }
+            .sidebar-nav {
+                width: 250px;
+            }
+            .side-nav ul li a {
+                font-size: 12px;
+            }
+            .profile {
+                flex-direction: column;
+            }
+            .profile .name-pos {
+                margin: 15px 0;
+            }
+            .count_chart .chart {
+                height: 350px;
+            }
+            .main_contant .left_part .meme_card {
+                flex-direction: column;
+            }
+            .main_contant .left_part .meme_card .card h3 br,
+            .tranding_cards .tranding_card_info .card .card_name h2 br {
+                display: none;
+            }
+            .main_contant .left_part .meme_card .card {
+                height: 75px;
+            }
+            .count_chart {
+                margin-top: 10px;
+                padding: 10px;
+            }
+            .count_chart .chart_filter ul li a {
+                width: 48px;
+                font-size: 10px;
+            }
+            .chart_filter ul li {
+                margin: 0 5px;
+            }
+            .chart_filter ul {
+                margin-top: 5px;
+            }
+            .main_contant .left_part,
+            .media_memes .latest_media {
+                margin-bottom: 20px;
+            }
+            .right_part .right_card .card a {
+                margin-bottom: 5px;
+            }
+            .right_part .create_new {
+                padding: 15px;
+            }
+            .weekly_creation,
+            .new_arrival,
+            .media_memes,
+            .tranding_cards,
+            .recent_item {
+                margin-top: 20px;
+            }
+            .weekly_creation .week_card .card {
+                margin-top: 15px;
+            }
+            .weekly_creation {
+                height: 200px;
+            }
+            .tranding_cards .tranding_card_info .card .card_icon {
+                width: 35%;
+                height: auto;
+            }
+            .tranding_cards .tranding_card_info .card {
+                flex-direction: column;
+                justify-content: center;
+                height: 125px;
+                padding: 10px;
+                width: 42%;
+            }
+            .tranding_cards {
+                padding-bottom: 0;
+            }
+            .recent_item .title h4,
+            .media_memes .comman_media .title h4,
+            .media_memes .comman_media .title h4,
+            .head-inner h5,
+            .right_part .create_new h4,
+            .right_part .right_card .card h4 {
+                font-size: 14px;
+            }
+            .recent_item .recent_table table tbody .date_time p,
+            .recent_item .recent_table table tbody .media .name,
+            .recent_item .recent_table table tbody tr td,
+            .recent_item .recent_table table thead tr td,
+            .media_memes .comman_media .comman_media_inner ul .info_li .info .media_name h4,
+            .media_memes .comman_media .comman_media_inner ul .info_li .number,
+            .new_arrival_table table tr td .date_time p,
+            .new_arrival_table table tr td .item_detail .item_name h3,
+            .new_arrival_table table tbody tr td,
+            .new_arrival_table table thead tr td,
+            .tranding_cards .tranding_card_info .card .card_name h3 {
+                font-size: 12px;
+            }
+            .recent_item .title {
+                margin-bottom: 10px;
+            }
+            .recent_item .recent_table table thead {
+                line-height: 2;
+            }
+            .recent_item .recent_table table tbody tr td {
+                padding: 5px 0;
+            }
+            .recent_item .recent_table table tbody .media .img img,
+            .media_memes .comman_media .comman_media_inner ul .info_li .img img {
+                width: 50px;
+            }
+            .recent_item .recent_table table tbody .action ul li a {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+            .recent_item .pagenation {
+                margin-top: 10px;
+            }
+            .recent_item {
+                padding: 10px 15px;
+            }
+            .media_memes .comman_media .title,
+            .media_memes .comman_media .title {
+                padding: 12px 20px;
+            }
+            .head-inner h1,
+            .weekly_creation h3,
+            .new_arrival .new_arrival_info .title h2 {
+                font-size: 18px;
+            }
+            .header {
+                min-height: 90px;
+            }
+            .main_contant {
+                margin-top: 15px;
+                margin-bottom: 0;
+                padding: 0 15px;
+            }
+            .count_chart .chart {
+                height: 230px;
+                padding: 5px;
+                padding-bottom: 15px;
+            }
+            .count_chart .chart h2 {
+                font-size: 16px;
+                top: 10px;
+            }
+            .right_part .create_new h4,
+            .main_contant .left_part .meme_card .card {
+                margin-bottom: 10px;
+            }
+            .right_part .right_card .card a {
+                height: 60px;
+            }
+            .weekly_creation h3,
+            .new_arrival .new_arrival_info .title h2 {
+                line-height: 15px;
+            }
+            .new_arrival {
+                height: 355px;
+            }
+        }
